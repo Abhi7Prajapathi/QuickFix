@@ -80,9 +80,15 @@ WSGI_APPLICATION = 'quickfix_backend.wsgi.application'
 # https://docs.djangoproject.com/en/6.0/ref/settings/#databases
 
 DATABASES = {
-    'default': dj_database_url.config(
-        default=f"sqlite:///{BASE_DIR / 'db.sqlite3'}"
-    )
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': os.environ.get('DB_NAME', 'quickfix_db'),
+        'USER': os.environ.get('DB_USER', 'postgres_user'),
+        'PASSWORD': os.environ.get('DB_PASSWORD', 'super_secret_password'),
+        # CHANGE THIS LINE: Use 'db' as the default string
+        'HOST': os.environ.get('DB_HOST', 'db'), 
+        'PORT': '5432',
+    }
 }
 
 

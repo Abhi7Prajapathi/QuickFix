@@ -1,0 +1,15 @@
+# Python environment and runtime artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.venv/
+venv/
+env/
+
+# Local testing database (since you are now using PostgreSQL)
+db.sqlite3
+
+# OS files
+.DS_Store

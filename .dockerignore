@@ -1,0 +1,14 @@
+# Local Node/Build folders
+node_modules/
+dist/
+.env
+
+# Exclude backend entirely from frontend context
+backend/
+
+# Version control & OS files
+.git/
+.gitignore
+.vscode/
+*.md
+.DS_Store
