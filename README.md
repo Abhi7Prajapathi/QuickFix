@@ -88,4 +88,4 @@ QuickFix/
 **Abhilash R.**
 
 * GitHub: https://github.com/Abhi7Prajapathi
-* LinkedIn: https://linkedin.com/in/abhi-r-prajapathi-132544356
+* LinkedIn: https://www.linkedin.com/in/abhilash-r-prajapathi-132544356
